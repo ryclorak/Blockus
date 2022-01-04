@@ -6,9 +6,18 @@ public class gameFlow : MonoBehaviour
 {
     public Transform tileObj;
     private Vector3 nextTileSpawn;
-    public Transform hazObj;
-    private Vector3 nextHazardSpawn;
+    public Transform triangle1mObj;
+    private Vector3 nextTriangle1mSpawn;
+    public Transform triangle3mObj;
+    private Vector3 nextTriangle3mSpawn;
+    public Transform cube1mObj;
+    private Vector3 nextCube1mSpawn;
+    public Transform bucket2mObj;
+    private Vector3 nextBucket2mSpawn;
+    public Transform Blockus2mObj;
+    private Vector3 nextBlockus2mSpawn;
     private int randX;
+    private int rand;
 
     void Start()
     {
@@ -22,13 +31,30 @@ public class gameFlow : MonoBehaviour
     }
     IEnumerator spawnTile()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
+        rand = Random.Range(-1,2);
         randX = Random.Range(-1, 2);
-        nextHazardSpawn = nextTileSpawn;
-        nextHazardSpawn.x = randX;
+        nextTriangle1mSpawn = nextTileSpawn;
+        nextTriangle1mSpawn.x = randX + 999*rand;
+        nextTriangle1mSpawn.y = .25f;
         Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
-        Instantiate(hazObj, nextHazardSpawn, hazObj.rotation);
+        Instantiate(triangle1mObj, nextTriangle1mSpawn, triangle1mObj.rotation);
         nextTileSpawn.z += 3;
+
+        rand = Random.Range(-1,3);
+        randX = Random.Range(-1,2);
+        nextCube1mSpawn = nextTileSpawn;
+        nextCube1mSpawn.x = randX + 999*rand;
+        nextCube1mSpawn.y = .75f;
+        Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
+        Instantiate(cube1mObj, nextCube1mSpawn, cube1mObj.rotation);
+        nextTileSpawn.z +=3;
+
+        rand = Random.Range(-1,2);
+        nextBucket2mSpawn = nextTileSpawn;
+        nextBucket2mSpawn.x = 6f; 
+        nextBucket2mSpawn.y = 3f + 999*rand;
+        Instantiate(bucket2mObj, nextBucket2mSpawn, bucket2mObj.rotation);
         StartCoroutine(spawnTile());
     }
 }

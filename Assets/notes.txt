@@ -1,0 +1,16 @@
+thicker bucket so you cant fly through
+invisible rectangle inside to be the win trigger
+more frequent obstacles, slower speed? needs tweaking.
+include bucket on both sides
+maybe start with the speed slow then increase later or with permanent speed boosts
+  make it a spinning transparent card that has some up arrows
+  could also include some that have down arrows, to slow you down.
+    lose if your speed drops below some amount (show a message that says "too slow")
+increase size of collider for triangle to ensure boosting can happen..?
+  add extra of itself, larger/invisible to prefab
+redo prefabs probably
+figure out why bouncing? (meh its a feature)
+
+boss fight - Blockus
+  figure out how to export that sweet material from inventor
+  or get material for blockus elsewhere (ask mike)

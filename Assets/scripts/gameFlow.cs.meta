@@ -3,7 +3,11 @@ guid: b0cb60fa516564f40a6cc5c4839207ae
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - tileObj: {fileID: 6346491522029163178, guid: 928ea08370b682d4fbd114b4006618ad, type: 3}
+  - triangle1mObj: {fileID: 8769276732133138672, guid: 34daff5c069602a489cf40101efe5cb8, type: 3}
+  - triangle3mObj: {fileID: 5295143406931405055, guid: 91c9eef823e8ee14faa035484851e9ee, type: 3}
+  - cube1mObj: {fileID: 3421914475348786853, guid: 8e24fb1466f192a4397b6749efb9d12a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
