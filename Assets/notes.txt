@@ -14,3 +14,15 @@ figure out why bouncing? (meh its a feature)
 boss fight - Blockus
   figure out how to export that sweet material from inventor
   or get material for blockus elsewhere (ask mike)
+  once you land in a bucket, it actually just teleports you 
+    into a huge version of that bucket where you fight blockus.
+    OR it is the same exact box you landed in except you shrink 
+    to like 1/100 and summon blockus on trigger (halfway into the bucket?)
+      probably easier to just load a new scene, falling in to the huge bucket with blockus
+    Enough hits (somewhere,somehow) and it breaks apart..
+    ..summoning two (identical size?) in its place! High score wins.
+    maybe you have to just hit it and if you hit the sides you get hurt
+    3 hits to each blockus or 4? will have to test
+
+two different game modes basically - count seconds for how long you can stay on the course
+and count time alive and how many blockuses get killed in the other mode

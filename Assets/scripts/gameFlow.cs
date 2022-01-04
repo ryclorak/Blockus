@@ -31,30 +31,44 @@ public class gameFlow : MonoBehaviour
     }
     IEnumerator spawnTile()
     {
-        yield return new WaitForSeconds(0.5f);
-        rand = Random.Range(-1,2);
+        yield return new WaitForSeconds(0.25f);
+        Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
+        rand = Random.Range(-1,1);
         randX = Random.Range(-1, 2);
         nextTriangle1mSpawn = nextTileSpawn;
         nextTriangle1mSpawn.x = randX + 999*rand;
         nextTriangle1mSpawn.y = .25f;
-        Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
         Instantiate(triangle1mObj, nextTriangle1mSpawn, triangle1mObj.rotation);
         nextTileSpawn.z += 3;
 
-        rand = Random.Range(-1,3);
+        Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
+        rand = Random.Range(-1,1);
         randX = Random.Range(-1,2);
         nextCube1mSpawn = nextTileSpawn;
         nextCube1mSpawn.x = randX + 999*rand;
         nextCube1mSpawn.y = .75f;
-        Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
         Instantiate(cube1mObj, nextCube1mSpawn, cube1mObj.rotation);
-        nextTileSpawn.z +=3;
+        nextTileSpawn.z += 3;
 
+        Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
         rand = Random.Range(-1,2);
         nextBucket2mSpawn = nextTileSpawn;
         nextBucket2mSpawn.x = 6f; 
         nextBucket2mSpawn.y = 3f + 999*rand;
         Instantiate(bucket2mObj, nextBucket2mSpawn, bucket2mObj.rotation);
+        rand = Random.Range(-1,1);
+        randX = Random.Range(-1,2);
+        nextCube1mSpawn = nextTileSpawn;
+        nextCube1mSpawn.x = randX + 999*rand;
+        nextCube1mSpawn.y = .75f;
+        Instantiate(cube1mObj, nextCube1mSpawn, cube1mObj.rotation);
+        rand = Random.Range(-1,1);
+        randX = Random.Range(-1, 2);
+        nextTriangle1mSpawn = nextTileSpawn;
+        nextTriangle1mSpawn.x = randX + 999*rand;
+        nextTriangle1mSpawn.y = .25f;
+        Instantiate(triangle1mObj, nextTriangle1mSpawn, triangle1mObj.rotation);
+        nextTileSpawn.z += 3;
         StartCoroutine(spawnTile());
     }
 }
