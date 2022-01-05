@@ -16,5 +16,6 @@ public class camFollow : MonoBehaviour
     void LateUpdate()
     {
         transform.position = player.transform.position + offset;
+        
     }
 }
