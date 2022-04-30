@@ -34,7 +34,7 @@ public class gameFlow : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
         Instantiate(tileObj, nextTileSpawn, tileObj.rotation);
         rand = Random.Range(-1,1);
-        randX = Random.Range(-1, 2);
+        randX = Random.Range(-1,2);
         nextTriangle1mSpawn = nextTileSpawn;
         nextTriangle1mSpawn.x = randX + 999*rand;
         nextTriangle1mSpawn.y = .25f;
@@ -63,7 +63,7 @@ public class gameFlow : MonoBehaviour
         nextCube1mSpawn.y = .75f;
         Instantiate(cube1mObj, nextCube1mSpawn, cube1mObj.rotation);
         rand = Random.Range(-1,1);
-        randX = Random.Range(-1, 2);
+        randX = Random.Range(-1,2);
         nextTriangle1mSpawn = nextTileSpawn;
         nextTriangle1mSpawn.x = randX + 999*rand;
         nextTriangle1mSpawn.y = .25f;

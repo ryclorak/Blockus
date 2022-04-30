@@ -35,7 +35,7 @@ public class movement : MonoBehaviour {
     void Update()
     {
         if (rb.position.y < -1) {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Runner");
         }
     }
 
