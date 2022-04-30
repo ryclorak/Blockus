@@ -26,3 +26,12 @@ boss fight - Blockus
 
 two different game modes basically - count seconds for how long you can stay on the course
 and count time alive and how many blockuses get killed in the other mode
+
+different shaped buckets will be different bosses
+more obstacles on the path
+  moving obstacles
+
+generate a platform like 500 up, just covered in dick trees
+  maybe dont trigger generation of this platform until the player reaches 500 Y, then start coroutine
+
+be able to pick the color of your spherus (maybe this can be unlocked, different colors for different bosses? like n game)

@@ -8,6 +8,6 @@ public class winGame : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Application.Quit();  
-        EditorApplication.isPlaying = false;
+        // EditorApplication.isPlaying = false;
     }
 }

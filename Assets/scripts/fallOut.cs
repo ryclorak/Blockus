@@ -7,6 +7,6 @@ public class fallOut : MonoBehaviour
 {
     private void OnTriggerExit(Collider other)
 	{
-		SceneManager.LoadScene("SampleScene");
+		SceneManager.LoadScene("Runner");
 	}
 }
